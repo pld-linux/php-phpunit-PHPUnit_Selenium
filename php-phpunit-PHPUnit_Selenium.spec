@@ -3,13 +3,13 @@
 %define		pearname	PHPUnit_Selenium
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
-Version:	1.0.0
+Version:	1.0.2
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	1aec4f3bd9b5a7d2babdad5ee2435b22
-URL:		http://pear.phpunit.de/package/PHPUnit_Selenium/
+# Source0-md5:	1df5e1af44e5f54ae57c8a177ab5dadf
+URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
