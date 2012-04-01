@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
-Version:	1.2.5
+Version:	1.2.6
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	fd63014d037b921e5f6af8754b5b0f85
+# Source0-md5:	b13d69a1aeb5977a738ac66de6dbb2bb
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
@@ -53,3 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/PHPUnit/Extensions/SeleniumTestSuite.php
 %{php_pear_dir}/PHPUnit/Extensions/Selenium2TestCase.php
 %{php_pear_dir}/PHPUnit/Extensions/Selenium2TestCase
+%{php_pear_dir}/PHPUnit/Extensions/SeleniumBrowserSuite.php
