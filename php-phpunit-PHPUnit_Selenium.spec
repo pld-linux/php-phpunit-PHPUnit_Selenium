@@ -3,12 +3,13 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
-Version:	1.2.6
-Release:	2
+Version:	1.2.9
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	b13d69a1aeb5977a738ac66de6dbb2bb
+# Source0-md5:	1efe6cde459897295cd97fba63e02586
+Patch0:		peardeps.patch
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
@@ -20,7 +21,7 @@ Requires:	php(dom)
 Requires:	php(spl)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
-Requires:	php-phpunit-PHPUnit >= 3.6.0
+Requires:	php-phpunit-PHPUnit >= 3.7.0
 Requires:	php-reflection
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,6 +33,7 @@ In PEAR status of this package is: %{status}.
 
 %prep
 %pear_package_setup
+%patch0 -p1
 
 %build
 packagexml2cl package.xml > ChangeLog
@@ -54,3 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/PHPUnit/Extensions/Selenium2TestCase.php
 %{php_pear_dir}/PHPUnit/Extensions/Selenium2TestCase
 %{php_pear_dir}/PHPUnit/Extensions/SeleniumBrowserSuite.php
+%{php_pear_dir}/PHPUnit/Extensions/SeleniumCommon

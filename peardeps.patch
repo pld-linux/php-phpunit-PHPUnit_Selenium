@@ -1,0 +1,6 @@
+--- PHPUnit_Selenium-1.2.9/./usr/share/pear/PHPUnit/Extensions/SeleniumTestCase/Autoload.php~	2012-10-17 21:22:57.000000000 +0300
++++ PHPUnit_Selenium-1.2.9/./usr/share/pear/PHPUnit/Extensions/SeleniumTestCase/Autoload.php	2012-10-17 21:24:26.462105529 +0300
+@@ -1,2 +1,2 @@
+ <?php
+-require_once dirname(__FILE__) . '/../SeleniumCommon/Autoload.php';
++require_once 'PHPUnit/Extensions/SeleniumCommon/Autoload.php';
