@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
-Version:	1.2.11
-Release:	2
+Version:	1.3.3
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	9565a3259493344da5cb53465dbab0c8
+# Source0-md5:	33ee2caf975d6e657ee63f24d4224956
 Patch0:		peardeps.patch
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
