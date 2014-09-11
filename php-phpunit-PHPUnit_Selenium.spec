@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
 Version:	1.3.3
-Release:	2
+Release:	3
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -22,7 +22,7 @@ Requires:	php(reflection)
 Requires:	php(spl)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
-Requires:	php-phpunit-PHPUnit >= 3.7.0
+Requires:	phpunit >= 3.7.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
