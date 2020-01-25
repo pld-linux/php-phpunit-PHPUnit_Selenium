@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHPUnit_Selenium
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Selenium RC integration for PHPUnit
 Name:		php-phpunit-PHPUnit_Selenium
 Version:	1.3.3
