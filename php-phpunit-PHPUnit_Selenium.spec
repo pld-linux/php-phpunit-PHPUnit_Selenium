@@ -34,7 +34,7 @@ In PEAR status of this package is: %{status}.
 
 %prep
 %pear_package_setup
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 packagexml2cl package.xml > ChangeLog
